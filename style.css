@@ -41,7 +41,9 @@ html{
         z-index: 1;
         font-family: 'Alegreya Sans', sans-serif;
     }
-
+.navigation{
+    margin-left: 89px;
+}
 nav ul li a:hover{
     color: white ;
     background: black;
@@ -64,7 +66,7 @@ nav .fa-sharp{
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 5rem;
     margin: 135px 0 0 -3%;
     font-weight: bold;
     font-family: 'Alegreya Sans', sans-serif;
@@ -93,6 +95,11 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
     color: Black;
 }
 
+#about h2{
+    text-align: center;
+    color: Black;
+}
+
 .wrapperOne{
     padding-top: 70px;
 }
@@ -111,18 +118,32 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
  .aboutColOne img{
         width: 100%;
         border-radius: 50%;
-        height:auto;
+        height:90%;
+        margin-bottom: 15px;
     }
-
+    
+.button{
+    display:block;
+    font-family: "Alegreya Sans", sans-serif;
+    background: #e6f3ff;
+    border: 2px solid black;
+    color: black;
+    padding: 12px 30px;
+    width: fit-content;
+    border-radius: 25px;
+    text-decoration: none;
+    transition:  0.5s;
+    margin-left: 70px;
+}
 
 .aboutColTwo{
     flex-basis: 60%;
 }
 
  .aboutColTwo p{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-family: "Alegreya Sans", sans-serif;
-        color:#0D3050;
+        color: black;
     }
 
 
@@ -131,12 +152,15 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
     font-weight: 500;
     font-weight: bold;
     font-family: "Alegreya Sans", sans-serif;
-    margin-bottom: 10%;
-    color:#0D3050;
+    margin-bottom: 3%;
+    color:black;
 }
 
 .socialIcons{
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .socialIcons a{
@@ -149,23 +173,21 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
     }
 
 .socialIcons a:hover{
-  color:#77acde;
   transform: translateY(-8px);
   cursor: pointer;
 }
 
 
 /************** Project Section ************/
-.wrapperOne h2{
-    color:#0D3050;
-    align-items: center;
+#portfolio h2{
     text-align: center;
-    font-size: 50px;
+    color: black;
+    font-size: 45px;
     font-weight: 500;
-    font-family: "Alegreya Sans", sans-serif;
     font-weight: bold;
+    font-family: "Alegreya Sans", sans-serif;
+    margin-bottom: 3%;
 }
-
 
 body p{
     text-align: justify;
@@ -179,7 +201,7 @@ body p{
 }
 
 .project{
-border: double 5px #0D3050;
+border: double 5px black;
 border-radius: 15px;
 margin: 20px 0;
 padding: 20px;
@@ -206,6 +228,7 @@ align-items: center;
     border-radius: 15px;
     margin: 20px 0;
     padding: 20px;
+    background: #e6f3ff;
 }
 
 .reverse{
@@ -220,22 +243,26 @@ a{
     width: 50%;
     font-size: 1.4rem;
     font-family: 'Alegreya Sans', sans-serif;
+    background: #e6f3ff;
 }
 
 .projectInfo p{
-    color:#0D3050;
+    color: black;
+    background: #e6f3ff;
 }
 .project h3{
 display: inline-block;
 padding-bottom: 10px;
 font-size: 35px;
-color:#0D3050;
+color: black;
+background: #e6f3ff;
 }
 .toolkit {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         padding-top: 10px;
+        background: #e6f3ff;
 }
 
 ul {
@@ -246,15 +273,17 @@ ul {
     font-size: 1.2rem;
     padding: 5px;
     margin: 5px 10px 5px 0;
-    border: 1px solid #0D3050;
+    border: 1px solid black;
     border-radius: 15px;
     transition: 0.7s;
-    color: #0D3050;
+    color: black;
+    background: #e6f3ff;
 }
 .view{
     display: flex;
     margin: 10px 0;
     padding-top: 10px;
+    background: #e6f3ff;
 }
 
 .link{
@@ -263,20 +292,20 @@ ul {
 
 .link a{
 padding: 5px;
-border-top: 1px solid #0D3050;
-border-bottom: 1px solid #0D3050;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
 transition: 0.7s;
 letter-spacing: 2px;
 font-size: 1.2rem;
-color: #0D3050;
+color: black;
 }
 
 .link a:hover{
-border-left: 1px solid #0D3050;
-border-right: 1px solid #0D3050;
+border-left: 1px solid black;
+border-right: 1px solid black;
 border-radius: 15px;
 color: white;
-background: #0D3050;
+background: black;
 }
 
 
@@ -303,9 +332,8 @@ background: #0D3050;
 
 /************ API Call Section  ********/
 #new-joke-btn {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
-    border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -314,12 +342,35 @@ background: #0D3050;
     margin-bottom: 20px;
     cursor: pointer;
   }
+
+  #joke-container{
+    text-align: center;
+  }
   
+  #joke-container h2{
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: "Alegreya Sans", sans-serif;
+    margin-bottom: 3%;
+  }
+
+  #joke-container p{
+  font-size: 1.4rem;
+  font-family: "Alegreya Sans", sans-serif;
+  color: black;
+  margin-bottom: 25px;
+  }
+
   #joke-text {
     font-size: 18px;
-    color: #666;
+    color:black;
     margin: 0 auto;
     width: 80%;
+    border: 2px solid black;
+    padding: 5px 10px;
   }
 
  /*************** Media Queries **********/
@@ -344,8 +395,8 @@ background: #0D3050;
       width: 200px;
       height:60vh;
       padding-top: 50px;
-      background: #e6f3ff;
-      color: #0D3050;
+      background:  whitesmoke;
+      color: black;
       z-index : 2;
       transition: right 0.5s;
    }
@@ -354,12 +405,12 @@ background: #0D3050;
        margin:25px;
   }
     nav ul li a{
-          color: #0D3050;
+          color: black;
        }
     
   
   nav ul li a:hover{
-      background: #0D3050;
+      background: black;
       color: #e6f3ff;
   }
   nav ul .fa-solid{

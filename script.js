@@ -2,7 +2,7 @@ const jokeTextElement = document.getElementById('joke-text');
 const newJokeButton = document.getElementById('new-joke-btn');
 
 newJokeButton.addEventListener('click', fetchJoke);
-
+fetchJoke();
 function fetchJoke() {
   // Make a request to the Chuck Norris Jokes API
   fetch('https://api.chucknorris.io/jokes/random')
