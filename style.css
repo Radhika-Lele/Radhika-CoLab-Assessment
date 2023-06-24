@@ -10,7 +10,7 @@ html { box-sizing: border-box;}
     margin: 0; 
     padding: 0;
     box-sizing: border-box; 
-    background: whitesmoke;
+    background: rgb(223, 236, 244);
     color: black;
 }
 
@@ -21,8 +21,7 @@ html{
  .wrapper{
     max-width: 1080px;
     margin: 0 auto;
-    width: 90%;
-   
+    width: 90%;  
 }
 
  nav ul li{
@@ -67,7 +66,7 @@ nav .fa-sharp{
 
 h1{
     font-size: 5rem;
-    margin: 135px 0 0 -3%;
+    margin: 135px 0 10% 0;
     font-weight: bold;
     font-family: 'Alegreya Sans', sans-serif;
     /* // margin-left: 20%; */
@@ -93,6 +92,9 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
 #about{
     padding: 80px 0;
     color: Black;
+    border:3px solid black;
+    border-radius: 15px;
+    padding: 20px;
 }
 
 #about h2{
@@ -118,7 +120,7 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
  .aboutColOne img{
         width: 100%;
         border-radius: 50%;
-        height:90%;
+        height: auto;
         margin-bottom: 15px;
     }
     
@@ -128,12 +130,18 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
     background: #e6f3ff;
     border: 2px solid black;
     color: black;
-    padding: 12px 30px;
+    padding: 8px;
     width: fit-content;
     border-radius: 25px;
     text-decoration: none;
     transition:  0.5s;
     margin-left: 70px;
+    font-size: 1.2rem
+}
+
+.button:hover{
+    background: #93c5f3;
+    transition: 0.5s;
 }
 
 .aboutColTwo{
@@ -187,6 +195,7 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
     font-weight: bold;
     font-family: "Alegreya Sans", sans-serif;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 body p{
@@ -332,19 +341,31 @@ background: black;
 
 /************ API Call Section  ********/
 #new-joke-btn {
-    background-color: black;
-    color: white;
+    background: #e6f3ff;
+    color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin-bottom: 20px;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-family: "Alegreya Sans", sans-serif;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+
+  #new-joke-btn:hover{
+  background: #93c5f3;
+  transition: 0.5s;
   }
 
   #joke-container{
     text-align: center;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 2%;
   }
   
   #joke-container h2{
@@ -395,7 +416,7 @@ background: black;
       width: 200px;
       height:60vh;
       padding-top: 50px;
-      background:  whitesmoke;
+      background: rgb(223, 236, 244);
       color: black;
       z-index : 2;
       transition: right 0.5s;
@@ -427,7 +448,7 @@ background: black;
   }
   
   .headerText h1{
-    font-size:40px;
+    font-size:50px;
 }
 
 .headerText p{
@@ -450,12 +471,19 @@ top: -8%;
     margin-left: 20px;
 }
 
-.aboutColTwo a{
+/* .aboutColTwo a{
 margin-left: 20%;
+} */
+#about h2{
+font-size: 45px;
 }
-.aboutColTwo h2{
-margin-top: 12%;
-text-align: center;
+
+#portfolio h2{
+font-size: 45px; 
+}
+
+#joke-container h2{
+    font-size: 45px; 
 }
    
   }
