@@ -3,9 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Radhika Lele - Frontend Developer</title>
+
+    <!------ Favicon  ------>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    
+    <!------ Google fonts------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+       <!-- FONT AWESOME ICONS -->
+       <script src="https://kit.fontawesome.com/a9dfc8582d.js" crossorigin="anonymous"></script>
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Radhika Lele</h1>
+    <div class="header" id="home">
+        <div class="wrapper">      
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#jokes">Jokes</a></li>
+                    <i class="fa-solid fa-xmark"></i>   
+                </ul> 
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </nav>
+               
+            <div class="headerText">
+                <h1><span>RADHIKA</span> LELE</h1>
+                <!-- <p>Front End Web Developer</p>     -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About ME SECTION -->
+    <section class="aboutMeSection"> 
+        <div id="about" class="wrapper">
+            <h2 class="subTitle">ABOUT ME </h2>
+            <div class="row">
+                <div class="aboutColOne">
+                    <img src="./assets/About Me image.jpeg" alt="Owner Image">
+                    
+                </div>
+                <div class="aboutColTwo">
+                    <p>As a front-end developer, I am dedicated to crafting clean and user-friendly websites that exceed      expectations. I love working on projects that challenge me, allow me to continuously improve, and provide value to my clients. 
+                    I also possess exceptional communication and interpersonal skills, developed through 2+ years of experience in customer service and as a teaching assistant, allowing me to effectively collaborate with team members and clients alike.</p>
+                    <br />
+                    <p>When I am not coding I like to learn and try new receipes. Also I am obsessed with quilling, also called paper filigree to create decorative designs. 
+                    </p>
+                    <br />
+                    <p>You can reach me on social media or email!</p>
+                    <div class="socialIcons">
+                        <a href="https://github.com/Radhika-Lele"  target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/radhika-lele/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/RadhikaKhaparde"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="mailto:radhika.khaparde@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>  
+                     </div>
+                     <br />
+                     <br />
+                     <a href="./assets/Radhika_Lele_Resume.pdf" download class="button" target="_blank">Download CV</a> 
+                </div>
+            </div>
+        </div>
+     </section>
+     
+   <!-------- Projects Section   ----------->
+    <section class="projectWork">
+    <div id="portfolio" class="wrapper"> 
+      <h2>PROJECTS</h2>  
+   <div class="project" data-aos="fade-left">
+    <div class="preview">
+        <a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/Robo Trivia laptop.png" alt="Robo Trivia quiz app">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3><a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">Robo Trivia</a></h3>
+        <p>Let's start quiz! You can also log in as a guest player by clicking the login button, where you can choose a nickname for yourself. Once logged in, you'll have the option to select from various categories and difficulty levels for the quiz. When you're ready, simply start the quiz and enjoy! You can also keep track of your scores on the scoreboard. Have fun and enjoy your quiz experience!</p>
+        <ul class="toolkit">
+            <li>React</li>
+            <li>CSS3</li>
+            <li>REST API's</li>
+            <li>Responsive</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/RoboTriviaProject/RoboTrivia" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://robo-trivia-app.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="project reverse"  data-aos="fade-right">
+    <div class="preview">
+        <a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/Recipe Finder laptop.png" alt="Recipe Finder App">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3>
+            <a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">Recipe Finder</a>
+        </h3>
+        <p>Do you want to try new recipes? Let's search anything you want to cook. Powered by the Edamam API, this advanced tool empowers users to conduct precise recipe searches based on specific criteria. With its comprehensive functionality, the API grants users a highly customizable and efficient means of discovering culinary inspiration and meeting their recipe needs.
+        </p>
+        <ul class="toolkit">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS3</li>
+            <li>REST API's</li>
+            <li>Responsive</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/Radhika-Lele/RadhikaLeleProject3" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://recipe-find-app.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="project" data-aos="fade-left">
+    <div class="preview">
+        <a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/Novas Boutique Shop laptop.png" alt="Online Firniture shopping website">
+        </a>
+    </div>
+    <div class="projectInfo">
+        <h3><a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">
+                NOVAS Boutique Shop</a></h3>
+        <p>Novas Boutique Shop is a specialized furniture store that offers a wide range of furniture options. Customers have the convenience of adding various furniture items to their shopping cart and able to create wishlist as well, allowing for easy and efficient online purchasing.</p>
+        <ul class="toolkit">
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>SASS</li>
+            <li>Firebase</li>
+            <li>Responsive</li>
+        </ul>
+
+        <div class="view">
+            <p class="link"><a href="https://github.com/Radhika-Lele/DhaliwalHuangLeleProjectTwo/tree/displayCartNew" target="_blank" rel="noopener noreferrer">Github</a></p>
+            <p class="link"><a href="https://novas-boutique-shop.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a></p>
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
+<br />
+<br />
+<section class="wrapper" id="jokes">
+    <div id="joke-container">
+        <h2>Chuck Norris Jokes</h2>
+        <p>Hey there! Get ready to roll on the floor laughing with the Chuck Norris Jokes API! The API offers a wide range of jokes, showcasing the legendary wit and humor associated with Chuck Norris. With a simple API call, users can retrieve a random Chuck Norris joke. With just a click, you'll be treated to a random and mind-blowingly hilarious Chuck Norris joke right on your screen. Brace yourself for an epic adventure of unstoppable laughter as you explore the legendary wit of Chuck Norris. Enjoy!</p>
+        <button id="new-joke-btn">Get a New Joke</button>
+        <p id="joke-text"></p>
+          
+      </div>
+</section>
+
+<script src="./script.js"></script>
 </body>
 </html>
