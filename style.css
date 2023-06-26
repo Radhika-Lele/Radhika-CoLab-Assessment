@@ -121,7 +121,7 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
         width: 100%;
         border-radius: 50%;
         height: auto;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
     }
     
 .button{
@@ -135,7 +135,7 @@ animation: typing 8s, cursor .4s step-end infinite alternate;
     border-radius: 25px;
     text-decoration: none;
     transition:  0.5s;
-    margin-left: 70px;
+    /* margin-left: 70px; */
     font-size: 1.2rem
 }
 
@@ -414,19 +414,21 @@ background: black;
       top:0;
       right: -200px;
       width: 200px;
-      height:60vh;
+      height:30vh;
       padding-top: 50px;
       background: rgb(223, 236, 244);
       color: black;
-      z-index : 2;
+      z-index : 5;
       transition: right 0.5s;
    }
   nav ul li{
        display: block;
        margin:25px;
+       /* border-bottom:1px solid #000; */
   }
-    nav ul li a{
+nav ul li a{
           color: black;
+         
        }
     
   
@@ -463,9 +465,11 @@ flex-direction: column;
 width: 50%;
 position: relative;
 left: 25%;
-top: -8%;
-}
 
+}
+.aboutColTwo{
+    margin-top: 15%;
+}
 .aboutColTwo p{
     margin-top: -10px;
     margin-left: 20px;
